@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "throw_null-pointer-exception_in_minecraft",
+	"version": "${version}",
+	"name": "throw NullPointerException in Minecraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/throw_null-pointer-exception_in_minecraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"command_block.test.null_pointer_exception.ThrowNullPointerExceptionInMinecraft"
+		],
+		"client": [
+			"command_block.test.null_pointer_exception.ThrowNullPointerExceptionInMinecraftClient"
+		]
+	},
+	"mixins": [
+		"throw_null-pointer-exception_in_minecraft.mixins.json",
+		{
+			"config": "throw_null-pointer-exception_in_minecraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
