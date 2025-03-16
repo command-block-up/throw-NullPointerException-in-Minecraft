@@ -3,15 +3,15 @@
 	"id": "throw_null-pointer-exception_in_minecraft",
 	"version": "${version}",
 	"name": "throw NullPointerException in Minecraft",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "",
 	"authors": [
-		"Me!"
+		"命令块command_block"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://space.bilibili.com/503534442",
+		"sources": "https://github.com/command-block-up/throw-NullPointerException-in-Minecraft"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT License",
 	"icon": "assets/throw_null-pointer-exception_in_minecraft/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -34,8 +34,5 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
